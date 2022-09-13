@@ -1,0 +1,81 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> SALES PREDICTION </h1><br>
+        
+        <form action="/prediction" method="post">
+
+            <b> Item_Weight :  <input type="text", name='Item_Weight', placeholder="enter 1"> <br><br>
+            Item_Visibility :  <input type="text", name='Item_Visibility', placeholder="enter 2"> <br><br>
+            Item_MRP :  <input type="text", name='Item_MRP', placeholder="enter 3"> <br><br>
+            
+            Outlet_Establishment_Year :  <input list="Outlet_Establishment_Year" name="Outlet_Establishment_Year"> <br><br>
+            <datalist id="Outlet_Establishment_Year">
+                <option value="1985">
+                <option value="1987">
+                <option value="1997">
+                <option value="1998">
+                <option value="1999">
+                <option value="2002">
+                <option value="2004">
+                <option value="2007">
+                <option value="2009">
+            </datalist>
+
+            Outlet_Size :  <input list="Outlet_Size" name="Outlet_Size"> <br><br>
+            <datalist id="Outlet_Size">
+                <option value="Small">
+                <option value="Medium">
+                <option value="High">
+            </datalist>
+
+            Outlet_Location_Type :  <input list="Outlet_Location_Type" name="Outlet_Location_Type"> <br><br>
+            <datalist id="Outlet_Location_Type">
+                <option value="Tier 1">
+                <option value="Tier 2">
+                <option value="Tier 3">
+            </datalist>
+
+            Item_Fat_Content :  <input list="Item_Fat_Content" name="Item_Fat_Content"> <br><br>
+            <datalist id="Item_Fat_Content">
+                <option value="Low Fat">
+                <option value="Regular">
+            </datalist>
+
+            Item_Type :  <input list="Item_Type" name="Item_Type"> <br><br>
+            <datalist id="Item_Type">
+                <option value="Fruits and Vegetables">
+                <option value="Snack Foods">
+                <option value="Household">
+                <option value="Frozen Foods">
+                <option value="Canned">
+                <option value="Baking Goods">
+                <option value="Health and Hygiene">
+                <option value="Soft Drinks">
+                <option value="Meat">
+                <option value="Breads">
+                <option value="Hard Drinks">
+                <option value="Item_Type_Others">
+                <option value="Breakfast">
+                <option value="Seafood">
+                <option value="Starchy Foods">
+            </datalist>
+
+            Outlet_Type :  <input list="Outlet_Type" name="Outlet_Type"> <br><br>
+            <datalist id="Outlet_Type">
+                <option value="Grocery Store">
+                <option value="Supermarket Type1">
+                <option value="Supermarket Type2">
+                <option value="Supermarket Type3">
+            </datalist>
+            
+            <input type="submit" , value='predict!' > <br><br><br></b>
+        
+        </form>
+        
+    </center>
+
+    </body>
+</html>
